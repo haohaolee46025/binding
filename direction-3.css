@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --font-display:'Share Tech Mono', monospace;
+    --font-display-content:'Mukta', sans-serif;;
+    --spacing:40px;
+}
+
+
+h1{
+    color: rgb(119, 60, 255);
+    font-size:46px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top:-30px;
+}
+
+h2{
+    color: rgb(119, 60, 255);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top:-0px;
+    text-align: left;}
+
+blockquote{
+    color:rgb(119, 60, 255);
+    font-size:20px;
+    text-align: left;
+}
+
+h5{
+    color: rgb(57, 255, 43);
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: right;
+    margin-bottom:80px;}
+
+#classname{font-size: 14px;
+    line-height: 16px;
+    color: rgb(119, 60, 255);}
+
+p{
+    color:rgb(113, 75, 202);
+    font-size:16px;
+    font-weight: 300;
+    width:75vw;
+    line-height: 28px;
+    margin-bottom:100px;
+}
+
+h3{
+    font-display:'Share Tech Mono', monospace;
+    color: rgb(255, 255, 255);
+    font-size:30px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+#bottom{
+    font-family: 'Mukta', sans-serif;}
+
+h4{ color:rgb(255, 255, 255);
+    font-size:12px;
+    font-weight: 300;
+    margin-top:-40px;
+}
+
+em{
+    font-weight: 500;
+    color:rgb(57, 255, 43);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#section2{margin-top: 150px;
+}
+
+footer{
+    background-color:rgb(119, 60, 255);
+    padding:40px;
+}
