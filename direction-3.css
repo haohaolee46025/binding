@@ -37,7 +37,7 @@ h1{
     font-weight: 700;
     letter-spacing: 0px;
     text-align: left;
-    margin-top:-30px;
+    margin-top:0px;
 }
 
 .star{
@@ -70,7 +70,7 @@ h3{
 h4{ color:#120536;
     font-size:20px;
     line-height: 26px;
-    font-weight: 500;
+    font-weight: 300;
     margin-top:-40px;
     margin-bottom:100px;
     letter-spacing: 1px;
@@ -78,7 +78,7 @@ h4{ color:#120536;
 
 
 .shine a {
-        text-decoration: none; 
+         text-decoration: none;
         color: #120536; 
       }
       
@@ -87,25 +87,70 @@ h4{ color:#120536;
       }
 
 
-blockquote{
-    color:rgb(119, 60, 255);
-    font-size:28px;
-    line-height: 36px;
-    text-align: left;
+/* Content page */
+
+.container_nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+
+/* h1 */
+
+.article-title{
+    font-size:40px;
+    line-height: 50px;
+}
+
+/* h2 */
+.article-subtitle{
+    font-size:22px;
+    line-height: 30px;
+}
+
+/* star */
+.star_inarticle{
+    font-size: 200px;
+    color:#120536;
+    margin-top:80px;
+    margin-right:40px;
+    position: relative;
+    text-align: right;
+}
+
+.star_inarticle:hover {
+    color: #FBF21F; 
+  }
+
+/* h5 */
+.classname{
+    display: none;
+    text-align: right;
 }
 
 
-#classname{font-size: 18px;
-    line-height: 20px;
-    color: rgb(119, 60, 255);}
+blockquote{
+    color:#120536;
+    font-size:28px;
+    line-height: 36px;
+    margin-bottom:80px;
+    text-align: left;
+}
+
+.quotes:hover {
+    color: #FBF21F; 
+  }
+
+
 
 p{
-    color:rgb(113, 75, 202);
-    font-size:18px;
-    font-weight: 300;
+    color:rgb(189, 179, 255);
+    font-size:16px;
+    font-weight: 100;
     width:80%;
     line-height: 32px;
-    margin-bottom:100px;
+    margin-bottom:120px;
+    letter-spacing: 1px;
 }
 
 #bottom{
