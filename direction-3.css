@@ -61,7 +61,7 @@ h2{
     color: rgb(251, 242, 31);
     font-size: 30px;
     line-height: 36px;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-top:-0px;
     text-align: left;
@@ -126,11 +126,12 @@ h4{ color:rgb(119, 71, 251);
     color: #120536; 
         border-style:solid;
         background: #FBF21F; 
+        border-color: #FBF21F;
 }      
 
 
 
-/* ==============================Content page---------------------------------------*/
+/* ---------------------------------------Content page---------------------------------------*/
 
 
 .nav_button{

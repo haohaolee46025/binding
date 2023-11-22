@@ -4,11 +4,11 @@ body{
     max-width:900px;
 }
 
-h1,h2,h3,blockquote {
+h1,h3,blockquote {
     font-family: var(--font-display);
 }
 
-h4,h5,h6,p {
+h2,h4,h5,h6,p {
     font-family: var(--font-display-content);
 }
 
