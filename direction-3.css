@@ -5,26 +5,79 @@
 :root{
     --font-display:'Share Tech Mono', monospace;
     --font-display-content:'Mukta', sans-serif;;
-    --spacing:20px;
+    --spacing:10%;
 }
 
 
+/* ---------------------------------------Navigation---------------------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b0131;
+    width: 100%;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20%; 
+    color: rgb(162, 128, 255); 
+}
+
+nav a:hover {
+    color: rgb(251, 242, 31);
+ }
+ 
+ 
+nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;  
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+nav #logo {
+    float: left; 
+    font-size: 50px;
+}
+
+
+/* ---------------------------------------Home page---------------------------------------*/
+
 body{
-    background-color:#150067;
+    background-color:#0b0131;
 }
 
 #Homepage-section1{
+    margin-top: 150px;
     margin-bottom: 150px;
 }
 
 h5{
-    color: rgb(119, 71, 251);
+    color: rgb(162, 128, 255);
     font-size: 16px;
     line-height: atuo;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 1px;
     text-align: left;
-    margin-bottom: 60px;}
+    margin-bottom: 40px;}
+
+    .article-date{
+        letter-spacing: 1px;
+        text-align: left;
+        margin-bottom: 20px;;
+    }
 
 #myname{
     margin-bottom: 100px;
@@ -40,7 +93,7 @@ h1{
     font-size:66px;
     line-height: 70px;
     font-weight: 700;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
     text-align: left;
     margin-top:0px;
     margin-bottom:10px;
@@ -48,11 +101,16 @@ h1{
 
 .star{
     font-size: 150px;
-    color:#120536;
+    color:rgb(28, 0, 104);
+    text-align: center;
 }
 
 .star:hover {
-    color: #FBF21F; 
+    color: #FBF21F;
+    transition-duration: 0.3s;
+	transition-property: #FBF21F;
+	transition-timing-function: linear, ease-in-out;
+    transform: scale(108%);
 }
 
 
@@ -82,7 +140,7 @@ h2{
 
 
 h3{
-    color: rgb(119, 71, 251);
+    color: rgb(162, 128, 255);
     font-size:32px;
     line-height: 36px;
     font-weight: 600;
@@ -90,7 +148,7 @@ h3{
     margin-bottom:60px;
 }
 
-h4{ color:rgb(119, 71, 251);
+h4{ color:rgb(162, 128, 255);
     font-size:24px;
     line-height: 30px;
     font-weight: 300;
@@ -106,14 +164,15 @@ h4{ color:rgb(119, 71, 251);
 }
       
 .shine a:hover { 
-    color: rgb(119, 71, 251); 
+    color: rgb(162, 128, 255); 
     text-decoration:
 }
 
 .button a {
         text-decoration: none;
-        color: rgb(119, 71, 251) ; 
-        background-color:#120536;
+        color: rgb(162, 128, 255) ; 
+        border-style:solid;
+        border-color:rgb(162, 128, 255) ;
         font-size:18px;
         border-radius: 25px;
         padding-left:24px;
@@ -124,9 +183,8 @@ h4{ color:rgb(119, 71, 251);
 }
      
 .button a:hover { 
-    color: #120536; 
+    color: #FBF21F; 
         border-style:solid;
-        background: #FBF21F; 
         border-color: #FBF21F;
 }      
 
@@ -135,7 +193,7 @@ h4{ color:rgb(119, 71, 251);
 /* ---------------------------------------Content page---------------------------------------*/
 
 
-.nav_button{
+/* .nav_button{
     position: fixed;
     right: 5%;
     top: 15%;
@@ -144,9 +202,9 @@ h4{ color:rgb(119, 71, 251);
 
   .nav_button a {
     text-decoration: none;
-    color: rgb(119, 71, 251);
+    color: rgb(162, 128, 255);
     border-style:solid;
-    border-color: rgb(119, 71, 251);
+    border-color: rgb(162, 128, 255);
     border-radius: 50%;
     font-size:12px;
     padding:16px;
@@ -160,7 +218,7 @@ h4{ color:rgb(119, 71, 251);
     color: #FBF21F; 
     border-style:solid;
     border-color: #FBF21F;
- }      
+ }       */
 
 /* h1 */
 
@@ -174,17 +232,20 @@ h4{ color:rgb(119, 71, 251);
 .article-subtitle{
     font-size:24px;
     line-height: 30px;
-    color:rgb(119, 71, 251);
-    margin-top: 80px;
+    color:rgb(162, 128, 255);
+    margin-top: 60px;
 }
 
 /* star */
 .star_inarticle{
-    font-size: 240px;
-    color:#120536;
-    margin-top:120px;
-    margin-right:40px;
-    /* text-align:right; */
+    opacity: 0%;
+    font-size: 50px;
+    color:rgb(28, 0, 104);
+    position: fixed;
+    right: 5%;
+    top: 80%;
+    transform:translateY(-50%);
+    rotate: 30deg;
 }
 
 .star_inarticle:hover {
@@ -199,27 +260,21 @@ h4{ color:rgb(119, 71, 251);
 
 
 blockquote{
-    color:#120536;
+    color:#ffffff;
     font-size:28px;
     line-height: 36px;
     margin-bottom:80px;
     text-align: left;
-    width:75%;
+    width: 100%;
 }
 
-.quotes:hover {
-    color: #FBF21F; 
-    }
-
-
-
 p{
-    color:rgb(189, 179, 255);
+    color:rgb(220, 220, 239);
     font-size:20px;
     font-weight: 100;
-    width:75%;
+    width:100%;
     line-height: 32px;
-    margin-bottom:120px;
+    margin-bottom:80px;
     letter-spacing: 1px;
 }
 
@@ -229,17 +284,17 @@ p{
 }
 
 h6{
-    color: rgb(119, 71, 251);
+    color: rgb(162, 128, 255);
     font-size: 24px;
     line-height: atuo;
     font-weight: 400;
     letter-spacing: 1px;
     text-align: left;
     margin-bottom: 24px;
-    width:75%;}
+    width:100%;}
 
 .article-link a {
-        color: rgb(119, 71, 251) ; 
+        color: rgb(162, 128, 255) ; 
         text-decoration:none;
         font-weight: 400;
 }
@@ -250,7 +305,7 @@ h6{
 }      
 
 
-  .star_inarticle_2{
+  /* .star_inarticle_2{
     font-size: 180px;
     color:#120536;
     margin-top:120px;
@@ -259,7 +314,7 @@ h6{
 
 .star_inarticle_2:hover {
     color: #FBF21F; 
-}
+} */
 
 
 footer{
@@ -267,7 +322,7 @@ footer{
     padding-bottom:100px;
 }
 
-/* ==============================1280---------------------------------------*/
+/* ==============================1080---------------------------------------*/
 
 @media screen and (min-width:1280px) { 
 
@@ -277,45 +332,61 @@ footer{
         --spacing:20px;
     }
 
-h5 {font-size: 16px;
+    #Homepage-section1{
+        margin-top:180px;
+        margin-bottom: 180px;
     }
 
+.div-container {
+    justify-content: center;
+    }
+        
+
+h5 {font-size: 20px;
+    }
+
+
+
 .star{
-      font-size: 280px;}
+      font-size: 320px;}
 
 h1{
-    font-size: 120px;
-    margin-bottom:40px}    
+    font-size: 160px;
+    margin-bottom:100px;
+    text-align: center;
+}    
 
 
 h2{
     font-size: 50px;
     line-height: 60px;
-    margin-top:80px;}    
+    margin-top:80px;
+    text-align: center;}    
 
 
 .container-menu {
     display:flex;
     flex-wrap: wrap;
     margin-top:-80px;
+    margin-right:-100px;
     }
     
 .menu-item {
     width: calc(33.33%);
-    margin-right:80px;
+    margin-right:100px;
     }
 
 h3{
-    font-size:26px;
+    font-size:28px;
     }
 
 h4{
-    font-size:16px;
+    font-size:20px;
     }
 
-/* ==============================Content page---------------------------------------*/
+/* ============================== 1080 Content page---------------------------------------*/
 
-.nav_button{
+/* .nav_button{
     right: 2%;
     top: 80%;
     margin-right:50px;
@@ -326,7 +397,7 @@ h4{
     padding:24px;
     padding-top:32px;
     padding-bottom:32px;
-}  
+}   */
 
 /* h1 */
 
@@ -335,39 +406,56 @@ h4{
     line-height: 70px;
     margin-top:60px;
     max-width:80%;
+    text-align: left;
 }
 
 /* h2 */
+
+h2{text-align: left;
+    }
+
 .article-subtitle{
     font-size:32px;
     line-height: 40px;
-    color:rgb(119, 71, 251);
-    margin-top: 80px;
+    text-align:right;
+    position: fixed;
+    right: 8%;
+    top: 83%;
+    transform:translateY(-50%);}
 }
 
+/* .article-date{
+    text-align:right;
+    position: fixed;
+    right: 8%;
+    top: 88%;
+    transform:translateY(-50%);
+} */
+
 .star_inarticle{
-    font-size: 280px;
-    color:#120536;
-    margin-right:300px;
-    margin-top:-100px;
-    text-align:right;}
+    opacity: 100%;
+    font-size: 1100px;
+    text-align:right;
+    position: fixed;
+    right: 0%;
+    top: 75%;
+    transform:translateY(-50%);
+}
 
 blockquote{
-    color:#120536;
-    font-size:26px;
-    line-height: 32px;
-    margin-top:60px;
-    margin-bottom:100px;
+    font-size:32px;
+    line-height: 40px;
+    margin-top:90px;
+    margin-bottom:80px;
     width:60%;
     }
   
 p{
-    color:rgb(189, 179, 255);
     font-size:20px;
     font-weight: 100;
     width:60%;
     line-height: 32px;
-    margin-bottom:120px;
+    margin-bottom:80px;
     letter-spacing: 1px;
     }
         
@@ -381,4 +469,3 @@ h6{
     margin-bottom: -20px;
     width:75%;}
 
-}
