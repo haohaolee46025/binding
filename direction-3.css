@@ -76,7 +76,7 @@ h5{
     .article-date{
         letter-spacing: 1px;
         text-align: left;
-        margin-bottom: 20px;;
+        margin-bottom: 40px;;
     }
 
 #myname{
@@ -233,13 +233,14 @@ h4{ color:rgb(162, 128, 255);
     font-size:24px;
     line-height: 30px;
     color:rgb(162, 128, 255);
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 /* star */
 .star_inarticle{
+    display: none;
     opacity: 0%;
-    font-size: 50px;
+    font-size: 240px;
     color:rgb(28, 0, 104);
     position: fixed;
     right: 5%;
@@ -256,6 +257,10 @@ h4{ color:rgb(162, 128, 255);
 .classname{
     display: none;
     text-align: right;
+}
+
+.article-date{
+    margin-top:-40px;
 }
 
 
@@ -291,7 +296,7 @@ h6{
     letter-spacing: 1px;
     text-align: left;
     margin-bottom: 24px;
-    width:100%;}
+    width:75%;}
 
 .article-link a {
         color: rgb(162, 128, 255) ; 
@@ -386,7 +391,7 @@ h4{
 
 /* ============================== 1080 Content page---------------------------------------*/
 
-/* .nav_button{
+.nav_button{
     right: 2%;
     top: 80%;
     margin-right:50px;
@@ -397,7 +402,7 @@ h4{
     padding:24px;
     padding-top:32px;
     padding-bottom:32px;
-}   */
+}  
 
 /* h1 */
 
@@ -410,10 +415,6 @@ h4{
 }
 
 /* h2 */
-
-h2{text-align: left;
-    }
-
 .article-subtitle{
     font-size:32px;
     line-height: 40px;
@@ -422,17 +423,13 @@ h2{text-align: left;
     right: 8%;
     top: 83%;
     transform:translateY(-50%);}
-}
 
-/* .article-date{
-    text-align:right;
-    position: fixed;
-    right: 8%;
-    top: 88%;
-    transform:translateY(-50%);
-} */
+.article-date{
+    margin-bottom:60px;
+} 
 
 .star_inarticle{
+    display: inline;
     opacity: 100%;
     font-size: 1100px;
     text-align:right;
@@ -445,7 +442,7 @@ h2{text-align: left;
 blockquote{
     font-size:32px;
     line-height: 40px;
-    margin-top:90px;
+    margin-top:0px;
     margin-bottom:80px;
     width:60%;
     }
@@ -468,4 +465,4 @@ h6{
     line-height: atuo;
     margin-bottom: -20px;
     width:75%;}
-
+}
