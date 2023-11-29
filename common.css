@@ -1,7 +1,7 @@
 body{
     padding: var(--spacing);
     margin:auto;
-    max-width:100%;
+    max-width:900px;
 }
 
 h1,h3,blockquote,li {
