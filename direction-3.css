@@ -52,6 +52,12 @@ nav #logo {
     font-size: 50px;
 }
 
+.triggered-nav {
+    color:rgb(251, 242, 31) ;
+    margin-left: 10px; 
+    padding: 5px;
+}
+
 
 /* ---------------------------------------Home page---------------------------------------*/
 
@@ -60,8 +66,8 @@ body{
 }
 
 #Homepage-section1{
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 h5{
@@ -73,11 +79,11 @@ h5{
     text-align: left;
     margin-bottom: 40px;}
 
-    .article-date{
-        letter-spacing: 1px;
-        text-align: left;
-        margin-bottom: 40px;;
-    }
+.article-date{
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 40px;;
+}
 
 #myname{
     margin-bottom: 100px;
@@ -90,7 +96,7 @@ h5{
     
 h1{
     color: rgb(251, 242, 31);
-    font-size:66px;
+    font-size:58px;
     line-height: 70px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -118,7 +124,7 @@ h1{
   
 h2{
     color: rgb(251, 242, 31);
-    font-size: 30px;
+    font-size: 28px;
     line-height: 36px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -141,7 +147,7 @@ h2{
 
 h3{
     color: rgb(162, 128, 255);
-    font-size:32px;
+    font-size:30px;
     line-height: 36px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -149,7 +155,7 @@ h3{
 }
 
 h4{ color:rgb(162, 128, 255);
-    font-size:24px;
+    font-size:22px;
     line-height: 30px;
     font-weight: 300;
     margin-top:-40px;
@@ -192,34 +198,6 @@ h4{ color:rgb(162, 128, 255);
 
 /* ---------------------------------------Content page---------------------------------------*/
 
-
-/* .nav_button{
-    position: fixed;
-    right: 5%;
-    top: 15%;
-    transform:translateY(-50%);
-}
-
-  .nav_button a {
-    text-decoration: none;
-    color: rgb(162, 128, 255);
-    border-style:solid;
-    border-color: rgb(162, 128, 255);
-    border-radius: 50%;
-    font-size:12px;
-    padding:16px;
-    padding-top:24px;
-    padding-bottom:24px;
-    font-weight: 400;
-    margin-top:400px;
- }
- 
-.nav_button a:hover { 
-    color: #FBF21F; 
-    border-style:solid;
-    border-color: #FBF21F;
- }       */
-
 /* h1 */
 
 .article-title{
@@ -240,17 +218,20 @@ h4{ color:rgb(162, 128, 255);
 .star_inarticle{
     display: none;
     opacity: 0%;
-    font-size: 240px;
+    font-size: 300px;
     color:rgb(28, 0, 104);
     position: fixed;
-    right: 5%;
-    top: 80%;
+    top: 70%;
     transform:translateY(-50%);
     rotate: 30deg;
 }
 
 .star_inarticle:hover {
-    color: #FBF21F; 
+    color: #FBF21F;
+    transition-duration: 0.2s;
+	transition-property: #FBF21F;
+	transition-timing-function: linear, ease-in-out;
+    transform: scale(108%);
 }
 
 /* h5 */
@@ -260,7 +241,7 @@ h4{ color:rgb(162, 128, 255);
 }
 
 .article-date{
-    margin-top:-40px;
+    margin-top:-60px;
 }
 
 
@@ -296,7 +277,8 @@ h6{
     letter-spacing: 1px;
     text-align: left;
     margin-bottom: 24px;
-    width:75%;}
+    width:75%;
+}
 
 .article-link a {
         color: rgb(162, 128, 255) ; 
@@ -310,21 +292,29 @@ h6{
 }      
 
 
-  /* .star_inarticle_2{
-    font-size: 180px;
-    color:#120536;
-    margin-top:120px;
-    margin-right:40px;
+/* ==============================footer---------------------------------------*/
+
+hr{
+    margin-bottom:40px ;
+    opacity: 20% ;
 }
 
-.star_inarticle_2:hover {
-    color: #FBF21F; 
-} */
-
-
 footer{
-    width:auto;
-    padding-bottom:100px;
+    padding-bottom:40px;
+    padding-top:40px;
+    position:sticky;
+}
+
+.container_footer{
+    display:flex;
+    flex-wrap: wrap;
+    }
+
+#footerbookname {
+    margin-top:80px;
+    line-height: 56px;
+    margin-bottom:0px;
+    font-size: 50px;
 }
 
 /* ==============================1080---------------------------------------*/
@@ -347,7 +337,7 @@ footer{
     }
         
 
-h5 {font-size: 20px;
+h5 {font-size: 18px;
     }
 
 
@@ -373,7 +363,7 @@ h2{
     display:flex;
     flex-wrap: wrap;
     margin-top:-80px;
-    margin-right:-100px;
+    align-items: center;
     }
     
 .menu-item {
@@ -386,7 +376,7 @@ h3{
     }
 
 h4{
-    font-size:20px;
+    font-size:24px;
     }
 
 /* ============================== 1080 Content page---------------------------------------*/
@@ -418,14 +408,12 @@ h4{
 .article-subtitle{
     font-size:32px;
     line-height: 40px;
-    text-align:right;
-    position: fixed;
-    right: 8%;
-    top: 83%;
-    transform:translateY(-50%);}
+    text-align: left;  
+} 
 
 .article-date{
-    margin-bottom:60px;
+    margin-top:80px;
+    margin-bottom:80px;
 } 
 
 .star_inarticle{
@@ -435,7 +423,7 @@ h4{
     text-align:right;
     position: fixed;
     right: 0%;
-    top: 75%;
+    top: 78%;
     transform:translateY(-50%);
 }
 
@@ -443,7 +431,7 @@ blockquote{
     font-size:32px;
     line-height: 40px;
     margin-top:0px;
-    margin-bottom:80px;
+    margin-bottom:100px;
     width:60%;
     }
   
@@ -452,7 +440,7 @@ p{
     font-weight: 100;
     width:60%;
     line-height: 32px;
-    margin-bottom:80px;
+    margin-bottom:100px;
     letter-spacing: 1px;
     }
         
@@ -466,3 +454,8 @@ h6{
     margin-bottom: -20px;
     width:75%;}
 }
+
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+    }
